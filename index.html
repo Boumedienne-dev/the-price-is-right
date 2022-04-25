@@ -8,10 +8,19 @@
 </head>
 <body>
     <script>
-        let playerName = "Boum";
+        let playerName = prompt ("player's name");
+        let playerNumber = prompt ("number between 1 and 100");
         const random = Math.floor(Math.random()* 100) + 1;
-        playerName = 10;
-        
+        while (playerNumber != random) {
+            if (playerNumber > random) {
+                alert ("It is less");
+            }
+            else if (playerNumber < random) {
+                alert ("It is more");
+            }
+            playerNumber = prompt("between 1 and 100");
+        }
+        alert("WIIIIINNNS");
     </script>
 </body>
 </html>
